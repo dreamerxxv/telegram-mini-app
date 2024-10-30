@@ -1,9 +1,5 @@
-import { getContract } from "thirdweb";
-import { useActiveAccount, useActiveWallet, useDisconnect, useReadContract } from "thirdweb/react";
-import { client } from "../client";
-import { baseSepolia } from "thirdweb/chains";
+
 import { useState } from "react";
-import { getBalance } from "thirdweb/extensions/erc20";
 import Menu from "./Menu";
 
 type Choice = 'Heart' | 'Rose' | 'Letter' // type property of game
@@ -32,15 +28,7 @@ interface GameResult {
 }
 
 export default function HeartRoseLetter() {
-    const account = useActiveAccount()
-    const { disconnect } = useDisconnect()
-    const wallet = useActiveWallet()
-
-    const contract = getContract({
-        client: client,
-        chain: baseSepolia,
-        address: "<YOUR_CONTRACT_ADDRESS>"
-    })
+    
 
     const [result, setResult] = useState<GameResult | null>(null)
     const [showModal, setShowModal] = useState<boolean>(false)
@@ -64,12 +52,7 @@ export default function HeartRoseLetter() {
         setShowModal(true)
     }
 
-    const { data: tokenbalance } = useReadContract(
-        getBalance,
-        {
-            contract: contract,
-            address: account?.address!
-        })
+    
 
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100vw', backgroundColor: '#f0f0f0', color: '#333' }}>
