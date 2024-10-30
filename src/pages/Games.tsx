@@ -6,7 +6,7 @@ import { client } from '../client'
 const Games = () => {
   return (<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100vw', backgroundColor: '#f0f0f0', color: '#333' }}>
 
-    <div className="w-full max-w-sm h-full p-4 bg-white border border-gray-200 rounded-2xl shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full max-w-md h-full p-4 bg-white border border-gray-200 shadow sm:p-4 dark:bg-gray-800 dark:border-gray-700">
 
         <div className="flex items-center justify-center mb-3">
 

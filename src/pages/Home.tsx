@@ -17,7 +17,7 @@ const Home = () => {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100vw', backgroundColor: '#f0f0f0', color: '#333' }}>
 
-            <div className="w-full max-w-sm h-full bg-white border border-gray-200 shadow dark:bg-black dark:border-gray-700">
+            <div className="w-full max-w-md h-full bg-white border border-gray-200 shadow dark:bg-black dark:border-gray-700">
 
                 <div className="relative w-full h-[200px]">
                     {/* Gambar Latar Belakang */}

@@ -57,7 +57,7 @@ export default function HeartRoseLetter() {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100vw', backgroundColor: '#f0f0f0', color: '#333' }}>
 
-            <div className="w-full max-w-sm h-full p-4 bg-white border border-gray-200 shadow sm:p-4 dark:bg-black dark:border-black">
+            <div className="w-full max-w-md h-full p-4 bg-white border border-gray-200 shadow sm:p-4 dark:bg-black dark:border-black">
 
                 {/* <div className="flex items-center justify-center mb-3">
 
