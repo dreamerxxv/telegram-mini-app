@@ -1,13 +1,9 @@
 import { getContract } from "thirdweb";
-import { ConnectButton, useActiveAccount, useActiveWallet, useDisconnect, useReadContract } from "thirdweb/react";
+import { useActiveAccount, useActiveWallet, useDisconnect, useReadContract } from "thirdweb/react";
 import { client } from "../client";
 import { baseSepolia } from "thirdweb/chains";
 import { useState } from "react";
 import { getBalance } from "thirdweb/extensions/erc20";
-import dailyReward from "../assets/images/dailyReward.png";
-import dailyCombo from "../assets/images/dailyCombo.png";
-import luckySpin from "../assets/images/luckySpin.png";
-import styles from "../assets/style.module.css";
 import Menu from "./Menu";
 
 type Choice = 'Heart' | 'Rose' | 'Letter' // type property of game

@@ -1,16 +1,12 @@
-import React from 'react'
-import { getContract } from "thirdweb";
+
 import { client } from "../client";
-import { baseSepolia } from "thirdweb/chains";
 import { useState } from "react";
-import { ConnectButton, useActiveAccount, useActiveWallet, useDisconnect, useReadContract } from "thirdweb/react";
-import { getBalance } from "thirdweb/extensions/erc20";
+import { ConnectButton } from "thirdweb/react";
 import Trophy from "../assets/images/Trophy.png";
 import Energy from "../assets/images/Energy.png";
 import Point from "../assets/images/Point.png";
 import bgHome from "../assets/images/bgHome.jpg";
 import rlhGame from "../assets/images/rlhGame.jpg";
-import puzzleGame from '../assets/images/2048Game.jpg';
 import Menu from '../components/Menu';
 import { Link } from 'react-router-dom';
 

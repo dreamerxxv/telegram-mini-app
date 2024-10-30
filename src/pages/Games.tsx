@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Menu from '../components/Menu'
 import { ConnectButton } from 'thirdweb/react'
 import { client } from '../client'
